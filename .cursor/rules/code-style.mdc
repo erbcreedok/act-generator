@@ -1,0 +1,21 @@
+---
+description: Formatting and code style rules
+alwaysApply: true
+---
+
+# Code Style
+
+- No semicolons
+- No trailing commas
+- Tabs for indentation, never spaces
+- Single quotes for strings
+
+```ts
+// ❌
+const name = "Alice";
+const list = [1, 2, 3,];
+
+// ✅
+const name = 'Alice'
+const list = [1, 2, 3]
+```

@@ -1,0 +1,28 @@
+---
+description: Export conventions — named only, no default exports
+alwaysApply: true
+---
+
+# Exports
+
+- **No default exports** — always use named exports
+- `index.ts` files are for re-exports only — no logic, no component definitions
+
+```ts
+// ❌
+export default function UserCard() {}
+
+// ✅
+export function UserCard() {}
+```
+
+```ts
+// ❌ index.ts with logic
+export function buildUrl(path: string) { ... }
+
+// ✅ index.ts re-exports only
+export { buildUrl } from './build-url'
+export { parseQuery } from './parse-query'
+```
+
+Config files (`vite.config.ts`, etc.) are exempt — they require default exports by convention.

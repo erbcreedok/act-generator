@@ -1,0 +1,26 @@
+---
+description: Naming conventions for variables, types, files, and constants
+alwaysApply: true
+---
+
+# Naming Conventions
+
+| Target | Convention | Example |
+|---|---|---|
+| Files & folders | kebab-case | `user-profile.tsx`, `auth-utils/` |
+| Components, Types, Classes, Global Objects | PascalCase | `UserCard`, `AuthService`, `ApiConfig` |
+| Variables, instances, functions | camelCase | `userName`, `fetchUser()` |
+| Global constants | UPPER_SNAKE_CASE | `MAX_RETRIES`, `API_BASE_URL` |
+
+```ts
+// ❌
+const API_url = 'https://...'
+const UserName = 'Alice'
+const FETCH_user = () => {}
+
+// ✅
+const API_BASE_URL = 'https://...'
+const userName = 'Alice'
+const fetchUser = () => {}
+type UserProfile = { name: string }
+```
