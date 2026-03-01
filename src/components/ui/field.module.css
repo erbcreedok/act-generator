@@ -1,0 +1,38 @@
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.label {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #6b7280;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.input,
+.textarea {
+	font-family: inherit;
+	font-size: 0.875rem;
+	color: #111827;
+	background: #fff;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	padding: 7px 10px;
+	transition: border-color 0.15s, box-shadow 0.15s;
+	outline: none;
+	width: 100%;
+}
+
+.input:focus,
+.textarea:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.textarea {
+	resize: vertical;
+	line-height: 1.5;
+}

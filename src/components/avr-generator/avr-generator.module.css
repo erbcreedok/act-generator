@@ -1,0 +1,174 @@
+.wrap {
+	display: flex;
+	height: calc(100vh - 120px);
+	min-height: 600px;
+	gap: 0;
+}
+
+/* ── form column ── */
+.formCol {
+	width: 420px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #e5e7eb;
+}
+
+.formScroll {
+	flex: 1;
+	overflow-y: auto;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f3f4f6;
+	margin-bottom: 4px;
+}
+
+.sectionTitle {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: #9ca3af;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	margin: 0;
+}
+
+.sectionHeaderRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.row2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.row3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+/* ── service card ── */
+.serviceCard {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: #f9fafb;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 14px;
+}
+
+.serviceCardHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.serviceCardNum {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: #6b7280;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.totalBadge {
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	border-radius: 6px;
+	padding: 8px 12px;
+	font-size: 0.875rem;
+	color: #1e3a8a;
+	text-align: right;
+}
+
+/* ── buttons ── */
+.addBtn {
+	background: none;
+	border: 1px dashed #d1d5db;
+	border-radius: 6px;
+	padding: 4px 10px;
+	font-size: 0.8rem;
+	color: #6b7280;
+	cursor: pointer;
+	transition: border-color 0.15s, color 0.15s;
+}
+
+.addBtn:hover {
+	border-color: #2563eb;
+	color: #2563eb;
+}
+
+.removeBtn {
+	background: none;
+	border: none;
+	color: #ef4444;
+	cursor: pointer;
+	font-size: 0.85rem;
+	padding: 2px 6px;
+	border-radius: 4px;
+	transition: background 0.15s;
+}
+
+.removeBtn:hover {
+	background: #fee2e2;
+}
+
+.actions {
+	display: flex;
+	gap: 10px;
+	flex-shrink: 0;
+	background: #fff;
+	border-top: 1px solid #e5e7eb;
+	padding: 12px 24px;
+}
+
+.openBtn {
+	flex: 1;
+	background: #111827;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 16px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+
+.openBtn:hover {
+	background: #374151;
+}
+
+/* ── preview column ── */
+.previewCol {
+	flex: 1;
+	background: #6b6b6b;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.previewScroll {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.previewScroll > * {
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
