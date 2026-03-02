@@ -59,6 +59,85 @@
 	gap: 10px;
 }
 
+/* ── templates ── */
+.templateList {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.templateItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 10px;
+	background: #f3f4f6;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+
+.templateItem:hover {
+	background: #e5e7eb;
+}
+
+.templateName {
+	font-size: 0.85rem;
+	color: #374151;
+	font-weight: 500;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	flex: 1;
+}
+
+.templateActions {
+	display: flex;
+	gap: 2px;
+}
+
+.iconBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.9rem;
+	padding: 4px;
+	color: #9ca3af;
+	transition: color 0.15s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+}
+
+.iconBtn:hover {
+	color: #111827;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.saveLocalBtn {
+	background: #fff;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	padding: 8px 12px;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: #374151;
+	cursor: pointer;
+	transition: all 0.15s;
+	width: 100%;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.saveLocalBtn:hover {
+	border-color: #9ca3af;
+	background: #f9fafb;
+}
+
 /* ── service card ── */
 .serviceCard {
 	display: flex;

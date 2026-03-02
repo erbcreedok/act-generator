@@ -6,7 +6,7 @@ export type AvrServiceItem = {
 	pricePerUnit: number
 }
 
-export type AvrData = {
+export type AvrData_v1 = {
 	customerName: string
 	customerBin: string
 	contractorName: string
@@ -21,3 +21,5 @@ export type AvrData = {
 	signDate: string
 	appendixPages?: string
 }
+
+export type AvrData = AvrData_v1

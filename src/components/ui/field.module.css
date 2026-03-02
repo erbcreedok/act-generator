@@ -36,3 +36,33 @@
 	resize: vertical;
 	line-height: 1.5;
 }
+
+/* DatePicker styles */
+.dateWrapper {
+	position: relative;
+	width: 100%;
+}
+
+.dateInput {
+	padding-right: 32px;
+}
+
+.calendarIcon {
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.1rem;
+	color: #9ca3af;
+	pointer-events: none;
+}
+
+.hiddenDate {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 36px;
+	opacity: 0;
+	cursor: pointer;
+}

@@ -3,7 +3,7 @@ export type ReportServiceItem = {
 	deliveryMethod: string
 }
 
-export type ReportData = {
+export type ReportData_v1 = {
 	// Header box (top-right)
 	appendixNumber: string // "2"
 	contractNumber: string // "ТМ/Д/051225-1"
@@ -40,3 +40,5 @@ export type ReportData = {
 	grossAmount: number // 1_280_050
 	netAmount: number // 1_000_000
 }
+
+export type ReportData = ReportData_v1

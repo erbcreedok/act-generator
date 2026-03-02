@@ -1,1 +1,1 @@
-export { Field, TextArea } from './field'
+export { Field, TextArea, DatePicker } from './field'

@@ -45,7 +45,7 @@ export default defineConfig([
 					selector: 'variable',
 					format: ['camelCase', 'UPPER_CASE', 'PascalCase']
 				},
-				{ selector: 'typeLike', format: ['PascalCase'] },
+				{ selector: 'typeLike', format: ['PascalCase', 'kebab-case'] },
 				{ selector: 'enumMember', format: ['PascalCase', 'UPPER_CASE'] },
 				{ selector: 'function', format: ['camelCase', 'PascalCase'] },
 				{
